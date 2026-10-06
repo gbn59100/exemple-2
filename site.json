@@ -1,0 +1,68 @@
+{
+  "name": "Chez Marcel",
+  "tagline": "Cuisine française traditionnelle, produits frais et de saison",
+  "announcement": "🍂 Nouveau : menu d'automne disponible dès maintenant !",
+  "hero_image": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1600",
+  "reservation_link": "",
+  "about_title": "Notre histoire",
+  "about_text": "Depuis 1998, Chez Marcel vous accueille dans une ambiance chaleureuse. Notre chef sélectionne chaque jour des produits locaux pour vous proposer une cuisine généreuse, simple et savoureuse.",
+  "about_image": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1000",
+  "highlights": [
+    { "icon": "🥕", "title": "Produits locaux", "text": "Des producteurs de la région, livrés frais chaque matin." },
+    { "icon": "👨‍🍳", "title": "Fait maison", "text": "Tout est cuisiné sur place, de l'entrée au dessert." },
+    { "icon": "🍷", "title": "Belle cave", "text": "Une sélection de vins choisis par notre sommelier." }
+  ],
+  "menu": [
+    {
+      "category": "Entrées",
+      "items": [
+        { "name": "Soupe à l'oignon gratinée", "description": "Croûtons et gruyère fondu", "price": "9 €" },
+        { "name": "Salade de chèvre chaud", "description": "Miel, noix, mesclun", "price": "11 €" },
+        { "name": "Terrine de campagne", "description": "Cornichons, pain grillé", "price": "10 €" }
+      ]
+    },
+    {
+      "category": "Plats",
+      "items": [
+        { "name": "Bœuf bourguignon", "description": "Mijoté 6h, pommes de terre grenaille", "price": "21 €" },
+        { "name": "Filet de bar", "description": "Beurre blanc, légumes de saison", "price": "24 €" },
+        { "name": "Risotto aux champignons", "description": "Parmesan, huile de truffe", "price": "18 €" }
+      ]
+    },
+    {
+      "category": "Desserts",
+      "items": [
+        { "name": "Crème brûlée", "description": "Vanille de Madagascar", "price": "8 €" },
+        { "name": "Tarte tatin", "description": "Crème fraîche épaisse", "price": "8 €" }
+      ]
+    },
+    {
+      "category": "Boissons",
+      "items": [
+        { "name": "Verre de vin de la maison", "description": "Rouge, blanc ou rosé", "price": "5 €" },
+        { "name": "Café gourmand", "description": "", "price": "9 €" }
+      ]
+    }
+  ],
+  "gallery": [
+    "https://images.unsplash.com/photo-1559339352-11d035aa65de?w=800",
+    "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800",
+    "https://images.unsplash.com/photo-1544148103-0773bf10d330?w=800",
+    "https://images.unsplash.com/photo-1424847651672-bf20a4b0982b?w=800"
+  ],
+  "reviews": [
+    { "author": "Sophie L.", "text": "Un accueil formidable et une cuisine qui rappelle celle de ma grand-mère." },
+    { "author": "Thomas D.", "text": "Le bœuf bourguignon est incroyable, je recommande les yeux fermés." },
+    { "author": "Camille R.", "text": "Cadre chaleureux, service rapide et prix honnêtes." }
+  ],
+  "hours": [
+    { "day": "Lundi – Jeudi", "time": "12h–14h / 19h–22h" },
+    { "day": "Vendredi – Samedi", "time": "12h–14h / 19h–23h" },
+    { "day": "Dimanche", "time": "Fermé" }
+  ],
+  "address": "12 rue de la Gare, 59200 Tourcoing",
+  "phone": "03 20 00 00 00",
+  "email": "contact@chezmarcel.fr",
+  "instagram": "https://instagram.com/",
+  "facebook": "https://facebook.com/"
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chez Marcel – Restaurant</title>
+  <meta name="description" content="Restaurant de cuisine française traditionnelle. Découvrez notre carte, nos horaires et réservez votre table.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍽️</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+<body>
+  <div class="banner" id="banner" hidden></div>
+
+  <header class="nav">
+    <a href="#top" class="logo" id="logo">Restaurant</a>
+    <button class="burger" id="burger" aria-label="Menu">☰</button>
+    <nav id="nav">
+      <a href="#about">À propos</a>
+      <a href="#menu">Carte</a>
+      <a href="#gallery">Galerie</a>
+      <a href="#reviews">Avis</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="top">
+    <div class="hero-content">
+      <h1 id="hero-title"></h1>
+      <p id="tagline"></p>
+      <div class="hero-btns">
+        <a href="#" class="btn" id="cta-reserve" hidden>Réserver une table</a>
+        <a href="#menu" class="btn btn-ghost">Voir la carte</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <div class="about">
+      <img id="about-image" alt="Notre restaurant" hidden>
+      <div>
+        <h2 id="about-title"></h2>
+        <p id="about-text"></p>
+      </div>
+    </div>
+    <div class="highlights" id="highlights"></div>
+  </section>
+
+  <section id="menu" class="section">
+    <h2 class="title">Notre carte</h2>
+    <div class="tabs" id="menu-tabs"></div>
+    <div id="menu-list"></div>
+  </section>
+
+  <section id="gallery" class="section" hidden>
+    <h2 class="title">Galerie</h2>
+    <div class="gallery" id="gallery-list"></div>
+  </section>
+
+  <section id="reviews" class="section" hidden>
+    <h2 class="title">Ils nous ont fait confiance</h2>
+    <div class="reviews" id="reviews-list"></div>
+  </section>
+
+  <section id="contact" class="section">
+    <h2 class="title">Infos & réservation</h2>
+    <div class="contact-grid">
+      <div class="card">
+        <h3>Horaires</h3>
+        <ul id="hours-list"></ul>
+      </div>
+      <div class="card">
+        <h3>Nous trouver</h3>
+        <p id="address"></p>
+        <p><a id="phone" href="#"></a></p>
+        <p><a id="email" href="#"></a></p>
+        <p class="socials"><a id="instagram" target="_blank" rel="noopener" hidden>Instagram</a> <a id="facebook" target="_blank" rel="noopener" hidden>Facebook</a></p>
+      </div>
+    </div>
+    <iframe id="map" title="Plan d'accès" loading="lazy" hidden></iframe>
+  </section>
+
+  <footer><p id="footer"></p></footer>
+
+  <a href="#" class="call-bar" id="call-bar" hidden>📞 Réserver</a>
+  <div class="lightbox" id="lightbox" hidden><img alt=""></div>
+
+  <script src="js/main.js"></script>
+  <script>
+    // Redirige vers /admin après invitation / connexion Netlify Identity
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", function (user) {
+        if (!user) window.netlifyIdentity.on("login", function () { document.location.href = "/admin/"; });
+      });
+    }
+  </script>
+</body>
+</html>
